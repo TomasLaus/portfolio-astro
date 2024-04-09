@@ -1,6 +1,7 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
+import Firebase from "./icons/Firebase.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -15,6 +16,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#14040B] text-white",
+    icon: Firebase,
+  },
 }
 const PROJECTS = [
   {
@@ -26,14 +32,14 @@ const PROJECTS = [
     image: "/projects/tomtion.png",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
-  // {
-  //   title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-  //   description:
-  //     "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS",
-  //   link: "https://adventjs.dev",
-  //   image: "/projects/adventjs.webp",
-  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
-  // },
+  {
+    title: "Solve It - Achieve mastery through challenge",
+    description:
+      "Solve It is a project that aims to recreate the functionality of LeetCode, a popular platform for practicing coding problems. Utilizing modern web development technologies such as React, Next.js, TypeScript, Tailwind CSS, and Firebase, this project provides users with an environment to solve coding problems, store their solutions, and engage with a community of fellow programmers.",
+    link: "https://solve-it-js.vercel.app/",
+    image: "/projects/solveit.png",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FIREBASE],
+  },
 ]
 ---
 
