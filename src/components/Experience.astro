@@ -1,5 +1,5 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import ExperienceItem from './ExperienceItem.astro';
 const EXPERIENCIE = [
   // {
   //   date: "",
@@ -9,18 +9,18 @@ const EXPERIENCIE = [
   //   link: "",
   // },
   {
-    date: "June 2022 - February 2024",
-    title: "Front End Developer  − Sunshine Ready Technologies",
+    date: 'June 2022 - February 2024',
+    title: 'Front End Developer  − Sunshine Ready Technologies',
     description:
-      "I demonstrated proficiency in translating designs and wireframes into high-quality code, meticulously following React.js workflows. My responsibilities included developing highly responsive UI components through the application of advanced React concepts. Furthermore, I played a pivotal role in creating features aimed at enhancing user experience, ensuring the optimization of web design across various screen types.",
+      'I demonstrated proficiency in translating designs and wireframes into high-quality code, meticulously following React.js workflows. My responsibilities included developing highly responsive UI components through the application of advanced React concepts. Furthermore, I played a pivotal role in creating features aimed at enhancing user experience, ensuring the optimization of web design across various screen types.',
   },
-]
+];
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class='relative border-s border-gray-200 ml-3'>
   {
     EXPERIENCIE.map((experiencie) => (
-      <li class="mb-10 ms-4">
+      <li class='mb-10 ms-4'>
         <ExperienceItem {...experiencie} />
       </li>
     ))
