@@ -3,6 +3,9 @@ import GitHub from './icons/GitHub.astro';
 import NextJS from './icons/NextJS.astro';
 import Firebase from './icons/Firebase.astro';
 import Tailwind from './icons/Tailwind.astro';
+import PSQL from './icons/PSQL.astro';
+import Prisma from './icons/Prisma.astro';
+
 import LinkButton from './LinkButton.astro';
 
 const TAGS = {
@@ -21,6 +24,16 @@ const TAGS = {
     class: 'bg-[#14040B] text-white',
     icon: Firebase,
   },
+  PSQL: {
+    name: 'PostgreSQL',
+    class: 'bg-[#325f8f] text-white',
+    icon: PSQL,
+  },
+  PRISMA: {
+    name: 'Prisma',
+    class: 'bg-[#171145] text-white',
+    icon: Prisma,
+  },
 };
 const PROJECTS = [
   {
@@ -30,7 +43,16 @@ const PROJECTS = [
     link: 'https://notes-app-tomaslaus.vercel.app/',
     github: 'https://github.com/TomasLaus/notes-app',
     image: '/projects/tomtion.png',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PRISMA],
+  },
+  {
+    title: 'NOA (Never One Alone) - Connect, Play, and Discover Your Ultimate Gaming Community',
+    description:
+      'NOA is a web application developed with React and TypeScript, designed to function like Tinder for gamers. This platform allows users to securely log in, create profiles based on their gaming preferences, and use a sophisticated matching algorithm to find other players with similar interests. Users can send invitations, engage in real-time chats, and plan gaming sessions together. The project was brought to life by a dedicated team working across several units: Frontend developers focused on creating a seamless user interface, Backend specialists who crafted the core functionalities, UX/UI designers who ensured an intuitive user experience, and QA testers who rigorously validated all features. NOA offers a unique space for gamers to connect, explore, and enjoy gaming together.',
+    github: 'https://github.com/No-Country/s14-09-ft-node-react',
+    link: 'https://noalone.vercel.app/',
+    image: '/projects/noa.png',
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PSQL, TAGS.PRISMA],
   },
   {
     title: 'Solve It - Achieve mastery through challenge',
