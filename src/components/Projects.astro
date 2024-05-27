@@ -5,6 +5,8 @@ import Firebase from './icons/Firebase.astro';
 import Tailwind from './icons/Tailwind.astro';
 import PSQL from './icons/PSQL.astro';
 import Prisma from './icons/Prisma.astro';
+import Clerk from './icons/Clerk.astro';
+import Shadcn from './icons/Shadcn.astro';
 
 import LinkButton from './LinkButton.astro';
 
@@ -34,6 +36,16 @@ const TAGS = {
     class: 'bg-[#171145] text-white',
     icon: Prisma,
   },
+  CLERK: {
+    name: 'Clerk',
+    class: 'bg-[#171145] text-white',
+    icon: Clerk,
+  },
+  SHADCN: {
+    name: 'Shadcn',
+    class: 'bg-black text-white',
+    icon: Shadcn,
+  },
 };
 const PROJECTS = [
   {
@@ -43,7 +55,7 @@ const PROJECTS = [
     link: 'https://notes-p2ih1e49k-tomaslaus.vercel.app/',
     github: 'https://github.com/TomasLaus/notes-app',
     image: '/projects/tomtion.png',
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PRISMA],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.SHADCN],
   },
   {
     title: 'NOA (Never One Alone) - Connect, Play, and Discover Your Ultimate Gaming Community',
@@ -61,7 +73,7 @@ const PROJECTS = [
     github: 'https://github.com/TomasLaus/ShareSpace',
     link: 'https://sharespace-app.vercel.app/',
     image: '/projects/sharespace.png',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.CLERK, TAGS.SHADCN],
   },
 ];
 ---
